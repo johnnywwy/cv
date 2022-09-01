@@ -165,6 +165,37 @@
     }
   </style>
   <style>
+    .work {
+    }
+
+    .work p {
+      color: #666;
+    }
+
+    .work strong {
+      color: #f60;
+    }
+
+    .work > ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .work > ol > li {
+      margin-bottom: 24px;
+    }
+
+    .work > ol > li > header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .work > ol > li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
     @media (max-width: 500px) {
       body {
         margin: 0;
@@ -202,24 +233,63 @@
 <article>
   <section class="bio">
     <h1>吴文宇</h1>
-<!--    <img src='./images/wwy.jpg' alt="" style="width: 100px; height: 100px;">-->
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MiB.svg/440px-MiB.svg.png' alt="" style="width: 100px; height: 100px;">
     <p>
-      男 | 25岁 | 前端开发工程师
+      男 | xx岁 | 前端开发工程师
     </p>
     <p>
-      手机：<a href="tel:15622178416">15622178416</a> |
-      邮箱：<a href="mailto:johnnywwy@163.com">johnnywwy@163.com</a>|
-      微信：johnnywwy
+      手机：<a href="tel:123456789">123456789</a> |
+      邮箱：<a href="mailto:johnnywwy@163.com">123456789@163.com</a>|
+      微信：123456789
     </p>
     <!--    <div style="height: 10px;"></div>-->
   </section>
   <section class="education">
     <h2>教育经历</h2>
     <p>
-      五邑大学 电子信息工程 本科
+      xx大学 xxx专业 本科
     </p>
     <!--   <div style="height: 10px;"></div>-->
   </section>
+
+  <section class="skills">
+    <h2>技能</h2>
+    <div class="wrapper">
+      <ul>
+        <li>熟悉页面制作技巧，能将设计稿<strong>1:1还原</strong></li>
+        <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+        <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+        <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+        <li>了解 <strong>Webpack 的配置和优化</strong></li>
+        <li>熟练使用 VS code、WebStorm 等开发工具</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work">
+    <h2>工作经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>广东微壹科技有限公司（实习） </h3>
+          <span>2020 年 7 月~2020 年 9 月</span>
+        </header>
+        <p>负责公司项目的缺陷修复以及开发工作，根据产品需求和 UI 设计师提供的高保图对静态页面的搭建以及样式的调整。</p>
+      </li>
+      <li>
+        <header>
+          <h3>深圳市彩虹云宝网络有限公司</h3>
+          <span>2021 年 3 月 ~ 至今</span>
+        </header>
+        <p>使用 React 框架对后台管理系统（餐饮类管理系统）进行功能的维护、开发，配合后端进行接口的联调完成页面的开发。</p>
+        <p>配合开发人员使用 React-Native 从头搭建了一个移动端 App（菜品管理 App），负责使用封装好的组件实现第一阶段主体功能，
+          第二阶段主要负责了样式的调整（UI）与缺陷修复，同时新增了一些小功能。</p>
+        <p>完成多款小程序的上线，负责功能的迭加以及样式的调整。</p>
+      </li>
+    </ol>
+  </section>
+
   <section class="projects">
     <h2>项目经历</h2>
     <p></p>
@@ -318,7 +388,7 @@
         </header>
         <p>
           一款基于
-          <strong>React </strong>/
+          <strong>Vue </strong>/
           <strong>Echarts </strong>
           的大屏可视化项目
         </p>
@@ -326,6 +396,7 @@
           为了适应所有屏幕，我使用了动态 <strong>rem</strong> 方案，具体思路见我的博客《<a
           href="https://github.com/johnnywwy/blog/blob/main/27.%E5%A4%A7%E5%B1%8F%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98.md">大屏项目实战</a>》
         </p>
+
         <p>
           这个项目是我在学习前端可视化与 echarts 时制作而成，页面布局使用了 <strong>Grid</strong> 和 <strong>Flex</strong> 布局
         </p>
@@ -363,20 +434,7 @@
   </section>
 
 
-  <section class="skills">
-    <h2>技能</h2>
-    <div class="wrapper">
-      <ul>
-        <li>熟悉页面制作技巧，能将设计稿<strong>1:1还原</strong></li>
-        <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-        <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
-        <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-        <li>了解 <strong>Webpack 的配置和优化</strong></li>
-        <li>熟练使用 VS code、WebStorm 等开发工具</li>
-      </ul>
-    </div>
-  </section>
+
 
 
   <section class="openSource">
@@ -424,8 +482,8 @@
   <section>
     <h2>其他链接</h2>
     <ul>
-      <li><a href="https://github.com/johnnywwy/blog">我的博客</a>，目前已有 28 篇技术文章</li>
-      <li><a href="https://github.com/johnnywwy">我的 GitHub</a>，过去三个月有 468 次提交</li>
+      <li><a href="https://github.com">我的博客</a>，目前已有 28 篇技术文章</li>
+      <li><a href="https://github.com">我的 GitHub</a>，过去三个月有 468 次提交</li>
     </ul>
   </section>
 </article>
